@@ -4,7 +4,7 @@ echo "================= CMSRUN starting jobNum=$1 ====================" | tee -a
 lsb_release -a 
 
 echo "================= CURL GRIDPACK ===================="| tee -a job.log
-curl --insecure https://salbrech.web.cern.ch/salbrech/aQGC_ZJJZJJjj_EWK_LO_NPle1_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz --retry 2 -o ./aQGC_ZJJZJJjj_EWK_LO_NPle1_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
+curl --insecure https://salbrech.web.cern.ch/salbrech/gridpacks/aQGC_ZJJZJJjj_EWK_LO_NPle1_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz --retry 2 -o ./aQGC_ZJJZJJjj_EWK_LO_NPle1_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
 
 ls -ltr 
 
