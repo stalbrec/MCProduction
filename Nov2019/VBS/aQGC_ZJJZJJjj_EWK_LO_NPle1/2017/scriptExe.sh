@@ -28,14 +28,14 @@ cd $BASE
 echo "================= CMSRUN starting Step 1 ====================" | tee -a job.log
 cmsRun -j GenSimAODSim_step1.log step1.py jobNum=$1
 
-echo "================= CMSRUN setting up CMSSW_8_0_31 ===================="| tee -a job.log
+echo "================= CMSRUN setting up CMSSW_9_4_0_patch1 ===================="| tee -a job.log
 
-if [ -r CMSSW_8_0_31/src ] ; then 
-    echo release CMSSW_8_0_31 already exists
+if [ -r CMSSW_9_4_0_patch1/src ] ; then 
+    echo release CMSSW_9_4_0_patch1 already exists
 else
-    scram p CMSSW CMSSW_8_0_31
+    scram p CMSSW CMSSW_9_4_0_patch1
 fi
-cd CMSSW_8_0_31/src
+cd CMSSW_9_4_0_patch1/src
 eval `scram runtime -sh`
 
 cd $BASE
